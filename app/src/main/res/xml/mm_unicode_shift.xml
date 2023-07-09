@@ -58,17 +58,17 @@
             android:keyEdgeFlags="left"
             android:keyLabel="ဗ" />
         <Key
-            android:codes="4157"
+            android:codes="4158"
             android:keyLabel="ှ" />
         <Key
             android:codes="4142"
             android:keyLabel="ီ" />
         <Key
 
-            android:codes="-5005"
+            android:codes="4153"
             android:keyLabel="္" />
         <Key
-            android:codes="4156"
+            android:codes="4157"
             android:keyLabel="ွ" />
 
 
@@ -97,9 +97,10 @@
     <Row>
 
         <Key
-            android:codes="-1"
+            android:codes="-11"
             android:isModifier="true"
             android:isSticky="true"
+            android:keyLabel="Main"
             android:keyEdgeFlags="left"
             android:keyWidth="13%p" />
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <input-method xmlns:android="http://schemas.android.com/apk/res/android">
     <subtype
-
-        android:imeSubtypeMode="keyboard" />
+        android:imeSubtypeLocale="my_MM"
+        android:imeSubtypeMode="keyboard"
+/>
 <!--    <subtype android:name="@string/display_name_english_keyboard_ime"-->
 <!--        android:icon="@drawable/subtype_icon_english_keyboard_ime"-->
 <!--        android:languageTag="en-US"-->

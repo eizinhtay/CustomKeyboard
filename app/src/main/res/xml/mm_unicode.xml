@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Keyboard
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     android:keyWidth="10%p"
-    android:keyHeight="60dp"
+    android:keyHeight="@dimen/key_normal"
     android:verticalGap="3dp">
+    <Row android:rowEdgeFlags="top">
+        <Key
+            android:codes="4161"
+            android:keyEdgeFlags="left"
+            android:keyLabel="၁" />
+        <Key
+            android:codes="4162"
+            android:keyLabel="၂" />
+        <Key
+            android:codes="4163"
+            android:keyLabel="၃" />
+        <Key
+            android:codes="4164"
+            android:keyLabel="၄" />
+        <Key
+            android:codes="4165"
+            android:keyLabel="၅" />
+        <Key
+            android:codes="4166"
+            android:keyLabel="၆" />
+        <Key
+            android:codes="4167"
+            android:keyLabel="၇" />
+        <Key
+            android:codes="4168"
+            android:keyLabel="၈" />
+        <Key
+            android:codes="4169"
+            android:keyLabel="၉" />
+        <Key
+            android:codes="4160"
+            android:keyEdgeFlags="right"
+            android:keyLabel="၀" />
+    </Row>
+
+
+<!--    <Row-->
+<!--        android:keyWidth="9.08%p"-->
+<!--        android:rowEdgeFlags="top">-->
 
     <Row
         android:keyWidth="9.08%p"
-        android:rowEdgeFlags="top">
-
+        >
 
         <Key
             android:codes="4102"
@@ -54,34 +91,33 @@
     <Row android:keyWidth="9.08%p">
 
         <Key
-            android:codes="4145,4119"
+            android:codes="4145"
             android:keyEdgeFlags="left"
             android:keyLabel="ေ" />
         <Key
-
-            android:popupCharacters="aasdf"
-            android:codes="4154,4157"
-            android:keyLabel="ျ"/>
+            android:codes="4155"
+            android:keyLabel="ျ"
+            android:popupCharacters="aasdf" />
         <Key
-            android:codes="4141,4142"
+            android:codes="4141"
             android:keyLabel="ိ" />
         <Key
-            android:popupCharacters="်"
-            android:codes="4153,4196"
-            android:keyLabel="်" />
+            android:codes="4154"
+            android:keyLabel="်"
+            android:popupCharacters="်" />
 
         <Key
-            android:codes="4139,4156"
+            android:codes="4139"
             android:keyLabel="ါ" />
 
         <Key
-            android:codes="4151,4150"
+            android:codes="4151"
             android:keyLabel="့" />
 
         <Key
-            android:popupCharacters="ြ"
-            android:codes="4155,4146"
-            android:keyLabel="ြ" />
+            android:codes="4156"
+            android:keyLabel="ြ"
+            android:popupCharacters="ြ" />
 
         <Key
             android:codes="4143"
@@ -99,60 +135,60 @@
             android:keyLabel="ဒ" />
     </Row>
     <Row>
-
         <Key
             android:codes="-1"
             android:isModifier="true"
             android:isSticky="true"
-            android:keyEdgeFlags="left"
-            android:keyWidth="13%p" />
+            android:keyWidth="13%p"
+            android:keyLabel="Shift"
+
+            android:keyEdgeFlags="left" />
         <Key
             android:codes="4118,4103"
-            android:keyLabel="ဖ"
-            android:keyWidth="9.25%p" />
+            android:keyWidth="9.25%p"
+            android:keyLabel="ဖ" />
         <Key
             android:codes="4113"
-            android:keyLabel="ထ"
-            android:keyWidth="9.25%p" />
+            android:keyWidth="9.25%p"
+            android:keyLabel="ထ" />
         <Key
             android:codes="4097"
-            android:keyLabel="ခ"
-            android:keyWidth="9.25%p" />
+            android:keyWidth="9.25%p"
+            android:keyLabel="ခ" />
         <Key
             android:codes="4124"
-            android:keyLabel="လ"
-            android:keyWidth="9.25%p" />
+            android:keyWidth="9.25%p"
+            android:keyLabel="လ" />
         <Key
             android:codes="4120"
-            android:keyLabel="ဘ"
-            android:keyWidth="9.25%p" />
+            android:keyWidth="9.25%p"
+            android:keyLabel="ဘ" />
         <Key
             android:codes="4106"
-            android:keyLabel="ည"
-            android:keyWidth="9.25%p" />
+            android:keyWidth="9.25%p"
+            android:keyLabel="ည" />
         <Key
             android:codes="4140,4125"
-            android:keyLabel="ာ"
-            android:keyWidth="9.25%p" />
+            android:keyWidth="9.25%p"
+            android:keyLabel="ာ" />
         <Key
             android:codes="4122"
-            android:keyLabel="ယ"
-            android:keyWidth="9.25%p" />
+            android:keyWidth="9.25%p"
+            android:keyLabel="ယ" />
         <Key
             android:codes="-5"
             android:isRepeatable="true"
-            android:keyEdgeFlags="right"
-            android:keyWidth="13%p" />
+            android:keyWidth="13%p"
+            android:keyEdgeFlags="right" />
     </Row>
     <Row android:rowEdgeFlags="bottom">
         <Key
             android:codes="-2"
+            android:keyWidth="13%p"
             android:keyEdgeFlags="left"
-            android:keyLabel="၁၂၃"
-            android:keyWidth="13%p" />
+            android:keyLabel="၁၂၃" />
         <Key
             android:codes="-100"
-
             android:keyWidth="12%p" />
 
         <Key
@@ -161,20 +197,20 @@
             android:keyWidth="8.75%p" />
         <Key
             android:codes="32"
-            android:keyLabel="space"
-            android:keyWidth="31.75%p" />
+            android:keyWidth="31.75%p"
+            android:keyLabel="space" />
         <Key
             android:codes="4098"
-            android:keyLabel="ဂ"
-            android:keyWidth="9.75%p" />
+            android:keyWidth="9.75%p"
+            android:keyLabel="ဂ" />
         <Key
             android:codes="4123"
-            android:keyLabel="ရ"
-            android:keyWidth="9.75%p" />
+            android:keyWidth="9.75%p"
+            android:keyLabel="ရ" />
         <Key
             android:codes="-4"
+            android:keyWidth="15%p"
             android:keyEdgeFlags="right"
-            android:keyLabel="Go"
-            android:keyWidth="15%p" />
+            android:keyLabel="Go" />
     </Row>
 </Keyboard>
