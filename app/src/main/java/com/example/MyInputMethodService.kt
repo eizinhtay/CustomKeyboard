@@ -18,6 +18,7 @@ class MyInputMethodService: InputMethodService(),KeyboardView.OnKeyboardActionLi
 
     private var caps = false
     private var shiftKeyboard = false
+    private var numberKeyboard = false
 
 
     override fun onCreateInputView(): View? {
@@ -33,25 +34,21 @@ class MyInputMethodService: InputMethodService(),KeyboardView.OnKeyboardActionLi
         Log.d("middle", "switchKeyboard: before switch")
         when (i) {
             -11 -> {
-//                key_family = 4677
-//                first_time_selected = 0
                 keyboard = Keyboard(this, R.xml.mm_unicode)
                 keyboardView!!.keyboard = keyboard
                 keyboardView!!.setOnKeyboardActionListener(this)
             }
-            -2 -> {
-//                key_family = 4677
-//                first_time_selected = 0
+
+            -1 -> {
                 shiftKeyboard=true
                 keyboard = Keyboard(this, R.xml.mm_unicode_shift)
                 keyboardView!!.keyboard = keyboard
                 keyboardView!!.setOnKeyboardActionListener(this)
             }
-            -1 -> {
-//                key_family = 4677
-//                first_time_selected = 0
+
+            -22 -> {
                 shiftKeyboard=true
-                keyboard = Keyboard(this, R.xml.mm_unicode_shift)
+                keyboard = Keyboard(this, R.xml.mm_unicode_two)
                 keyboardView!!.keyboard = keyboard
                 keyboardView!!.setOnKeyboardActionListener(this)
             }
@@ -60,7 +57,28 @@ class MyInputMethodService: InputMethodService(),KeyboardView.OnKeyboardActionLi
                 keyboardView!!.keyboard = keyboard
                 keyboardView!!.setOnKeyboardActionListener(this)
             }
+        }
 
+        if (shiftKeyboard){
+            when(i){
+                -2 ->{
+                    numberKeyboard = true
+                    keyboard = Keyboard(this, R.xml.mm_unicode_two)
+                    keyboardView!!.keyboard = keyboard
+                    keyboardView!!.setOnKeyboardActionListener(this)
+                }
+            }
+        }
+
+        if (numberKeyboard){
+            when(i){
+                -2 ->{
+                    numberKeyboard = true
+                    keyboard = Keyboard(this, R.xml.mm_unicode)
+                    keyboardView!!.keyboard = keyboard
+                    keyboardView!!.setOnKeyboardActionListener(this)
+                }
+            }
         }
     }
 
@@ -112,6 +130,7 @@ class MyInputMethodService: InputMethodService(),KeyboardView.OnKeyboardActionLi
                     }
                     caps = !caps
                     shiftKeyboard =!shiftKeyboard
+                    numberKeyboard=!numberKeyboard
                     keyboard!!.isShifted = caps
                     keyboardView!!.invalidateAllKeys()
                 }
@@ -119,6 +138,7 @@ class MyInputMethodService: InputMethodService(),KeyboardView.OnKeyboardActionLi
                 Keyboard.KEYCODE_SHIFT -> {
                     caps = !caps
                     keyboard!!.isShifted = caps
+                    numberKeyboard=!numberKeyboard
                     shiftKeyboard =!shiftKeyboard
                     keyboardView!!.invalidateAllKeys()
                 }

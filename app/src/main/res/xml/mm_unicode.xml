@@ -38,11 +38,6 @@
             android:keyLabel="၀" />
     </Row>
 
-
-<!--    <Row-->
-<!--        android:keyWidth="9.08%p"-->
-<!--        android:rowEdgeFlags="top">-->
-
     <Row
         android:keyWidth="9.08%p"
         >
@@ -141,7 +136,6 @@
             android:isSticky="true"
             android:keyWidth="13%p"
             android:keyLabel="Shift"
-
             android:keyEdgeFlags="left" />
         <Key
             android:codes="4118,4103"
@@ -179,11 +173,12 @@
             android:codes="-5"
             android:isRepeatable="true"
             android:keyWidth="13%p"
+            android:keyLabel="Del"
             android:keyEdgeFlags="right" />
     </Row>
     <Row android:rowEdgeFlags="bottom">
         <Key
-            android:codes="-2"
+            android:codes="-22"
             android:keyWidth="13%p"
             android:keyEdgeFlags="left"
             android:keyLabel="၁၂၃" />

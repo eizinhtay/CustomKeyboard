@@ -142,6 +142,7 @@
             android:codes="-5"
             android:isRepeatable="true"
             android:keyEdgeFlags="right"
+            android:keyLabel="Del"
             android:keyWidth="13%p" />
     </Row>
     <Row android:rowEdgeFlags="bottom">
