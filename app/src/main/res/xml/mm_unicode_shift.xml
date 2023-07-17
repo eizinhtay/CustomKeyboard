@@ -21,8 +21,12 @@
             android:keyLabel="ဣ" />
         <Key
 
+            android:codes="4174,4100"
+            android:keyLabel="၎င်း" />
+        <Key
+
             android:codes="4174"
-            android:keyLabel="၎" />
+            android:keyLabel="၎င်း" />
 
         <Key
             android:codes="4132"
@@ -51,6 +55,51 @@
             android:keyEdgeFlags="right"
             android:keyLabel="ဧ" />
     </Row>
+
+    <Row android:keyWidth="9.08%p">
+
+        <Key
+            android:keyEdgeFlags="left"
+            android:codes="4119"
+            android:keyLabel="ဗ" />
+        <Key
+            android:codes="4157"
+            android:keyLabel="ွ" />
+        <Key
+            android:codes="4142"
+            android:keyLabel="ီ" />
+        <Key
+
+            android:codes="4196"
+            android:keyLabel="ၤ" />
+        <Key
+            android:codes="4156"
+            android:keyLabel="ြ" />
+        <Key
+            android:codes="4150"
+            android:keyLabel="ံ" />
+        <Key
+
+            android:codes="4146"
+            android:keyLabel="ဲ" />
+        <Key
+
+            android:codes="4147"
+            android:keyLabel="ဳ" />
+        <Key
+
+            android:codes="4148"
+            android:keyLabel="ဴ" />
+
+        <Key
+            android:codes="4186"
+            android:keyLabel="ၚ" />
+        <Key
+            android:keyEdgeFlags="right"
+            android:keyLabel="ဓ"
+            android:codes="4115" />
+    </Row>
+
     <Row>
 
         <Key
@@ -100,7 +149,7 @@
             android:codes="-11"
             android:isModifier="true"
             android:isSticky="true"
-            android:keyLabel="Main"
+            android:keyIcon="@drawable/ic_up"
             android:keyEdgeFlags="left"
             android:keyWidth="13%p" />
 

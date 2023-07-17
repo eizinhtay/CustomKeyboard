@@ -67,6 +67,7 @@ class MyInputMethodService: InputMethodService(),KeyboardView.OnKeyboardActionLi
                     keyboardView!!.keyboard = keyboard
                     keyboardView!!.setOnKeyboardActionListener(this)
                 }
+
             }
         }
 
@@ -150,11 +151,43 @@ class MyInputMethodService: InputMethodService(),KeyboardView.OnKeyboardActionLi
                     )
                 )
 
+                -22->{
+                    caps = !caps
+                    keyboard!!.isShifted = caps
+                    numberKeyboard=!numberKeyboard
+                    shiftKeyboard =!shiftKeyboard
+                    keyboardView!!.invalidateAllKeys()
+                }
+                -2->{
+                    caps = !caps
+                    keyboard!!.isShifted = caps
+                    numberKeyboard=!numberKeyboard
+                    shiftKeyboard =!shiftKeyboard
+                    keyboardView!!.invalidateAllKeys()
+                }
+                4174->{
+                    val txt="၎င်း"
+                    val code = primaryCode.toChar()+"င်း"
+//                    if (Character.isLetter(code) && caps) {
+//                        code = code.uppercaseChar()
+//                    }
+                    //inputConnection.commitText(code.toString(), 1)
+//                    inputConnection.setComposingText(txt, 1)
+                    inputConnection.commitText(code.toString(), 1)
+
+                }
+
+                -5000->{
+                    val text="ရ်္"
+                    inputConnection.commitText(text.toString(), 1)
+
+                }
+
                 else -> {
-                    var code = primaryCode.toChar()
-                    if (Character.isLetter(code) && caps) {
-                        code = code.uppercaseChar()
-                    }
+                    val code = primaryCode.toChar()
+//                    if (Character.isLetter(code) && caps) {
+//                        code = code.uppercaseChar()
+//                    }
                     inputConnection.commitText(code.toString(), 1)
                 }
             }

@@ -3,6 +3,7 @@
     android:keyWidth="10%p"
     android:keyHeight="@dimen/key_normal"
     android:verticalGap="3dp">
+
     <Row android:rowEdgeFlags="top">
         <Key
             android:codes="4161"
@@ -37,7 +38,6 @@
             android:keyEdgeFlags="right"
             android:keyLabel="၀" />
     </Row>
-
     <Row
         android:keyWidth="9.08%p"
         >
@@ -135,7 +135,7 @@
             android:isModifier="true"
             android:isSticky="true"
             android:keyWidth="13%p"
-            android:keyLabel="Shift"
+            android:keyIcon="@drawable/ic_up"
             android:keyEdgeFlags="left" />
         <Key
             android:codes="4118,4103"
@@ -182,13 +182,13 @@
             android:keyWidth="13%p"
             android:keyEdgeFlags="left"
             android:keyLabel="၁၂၃" />
+
         <Key
-            android:codes="-100"
-            android:keyWidth="12%p" />
+            android:codes="-5000"
+            android:keyLabel="ရ်္" />
 
         <Key
             android:codes="-5005"
-
             android:keyWidth="8.75%p" />
         <Key
             android:codes="32"
