@@ -32,12 +32,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnSetting.setOnClickListener {
             // Open Language settings
-            val intent = Intent()
-            intent.component = ComponentName(
-                "com.android.settings",
-                "com.android.settings.Settings\$InputMethodAndLanguageSettingsActivity"
-            )
+//            val intent = Intent()
+//            intent.component = ComponentName(
+//                "com.android.settings",
+//                "com.android.settings.Settings\$InputMethodAndLanguageSettingsActivity"
+//            )
+            val intent = Intent("android.settings.INPUT_METHOD_SETTINGS")
             startActivity(intent)
+           // startActivity(intent)
         }
 
         binding.btnSelect.setOnClickListener {
