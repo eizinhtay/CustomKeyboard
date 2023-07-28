@@ -30,14 +30,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
-            android:text="Enable Unicode Keyboard"
+            android:text="Enable Unicode Keyboard †  💚💚 ဒီစာကို မြင်တဲ့အချိန်
+✨ ကိုယ့်ဖုန်း note ထဲမှာ
+၂လအတွင်း ဖြစ်ချင်တဲ့
+ဆန္ဒ ၂ ခုကို ချရေးကာ သိမ်းထားလိုက်ပါ….
+✨ စိတ်ဆန္ဒပြင်းပြလေ မြန်ဆန်လေပါပဲ…"
+            android:fontFamily="@font/taung_yoe"
             app:layout_constraintTop_toTopOf="parent"/>
         <Button
             android:id="@+id/btnSelect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
-            android:text="Select Unicode Keyboard"
+            android:text=" † "
+            android:fontFamily="@font/taung_yoe"
             app:layout_constraintTop_toBottomOf="@id/btnSetting"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

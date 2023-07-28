@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
 
            // Show the input method selection dialog
             inputMethodManager.showInputMethodPicker()
+            Log.d("btnSelect","${binding.btnSelect.text}")
 
         }
 

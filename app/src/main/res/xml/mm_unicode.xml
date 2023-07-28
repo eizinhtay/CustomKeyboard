@@ -186,10 +186,16 @@
         <Key
             android:codes="-5000"
             android:keyLabel="ရ်္" />
-
+<!--        <Key-->
+<!--            android:codes="8216"-->
+<!--            android:keyWidth="8.75%p"-->
+<!--            android:keyLabel="❛"-->
+<!--            />-->
         <Key
-            android:codes="-5005"
-            android:keyWidth="8.75%p" />
+            android:codes="8224"
+            android:keyWidth="8.75%p"
+            android:keyLabel="†"
+        />
         <Key
             android:codes="32"
             android:keyWidth="31.75%p"

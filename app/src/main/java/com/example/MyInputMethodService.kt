@@ -1,8 +1,10 @@
 package com.example
 
+import android.graphics.Typeface
 import android.inputmethodservice.InputMethodService
 import android.inputmethodservice.Keyboard
 import android.inputmethodservice.KeyboardView
+import android.os.Build
 import android.text.TextUtils
 import android.util.Log
 import android.view.KeyEvent
@@ -21,14 +23,23 @@ class MyInputMethodService: InputMethodService(),KeyboardView.OnKeyboardActionLi
     private var numberKeyboard = false
 
 
+    override fun onCreate() {
+        super.onCreate()
+
+    }
     override fun onCreateInputView(): View? {
+
+
         keyboardView = layoutInflater.inflate(R.layout.keyboard_view, null) as KeyboardView?
+
         keyboard = Keyboard(this, R.xml.mm_unicode)
         keyboardView!!.keyboard = keyboard
         keyboardView!!.setOnKeyboardActionListener(this)
         return keyboardView
     }
     private fun switchKeyboard(inputConnection: InputConnection, i: Int) {
+
+
         Log.d("DEBUG", "I: $i")
 
         Log.d("middle", "switchKeyboard: before switch")
@@ -180,6 +191,13 @@ class MyInputMethodService: InputMethodService(),KeyboardView.OnKeyboardActionLi
                 -5000->{
                     val text="ရ်္"
                     inputConnection.commitText(text.toString(), 1)
+
+                }
+
+                -5005->{
+                    // Load the font from assets
+                    val text="ိဲ"
+                    inputConnection.commitText(text, 1)
 
                 }
 

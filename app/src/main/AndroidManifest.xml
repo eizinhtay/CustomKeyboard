@@ -6,6 +6,7 @@
 <!--    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />-->
 
     <application
+        android:name="com.example.Application"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -42,7 +43,20 @@
 
             </meta-data>
         </service>
+
+<!--        <service android:name=".CustomKeyboardIME"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true"-->
+<!--            android:permission="android.permission.BIND_INPUT_METHOD">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.view.InputMethod"/>-->
+<!--            </intent-filter>-->
+<!--            <meta-data android:name="android.view.im"-->
+<!--                android:resource="@xml/method">-->
+
+<!--            </meta-data>-->
+<!--        </service>-->
     </application>
 
-
+<!--    https://r12a.github.io/app-analysestring/?chars=%E2%80%98%E2%80%99%E2%80%9C%E2%80%9D%C2%AB%C2%BB-.:;?!%E2%80%90%E2%80%91%E2%80%93%E2%80%94%E2%80%A6()%E2%80%A0%E2%80%A1%E2%80%B2%E2%80%B3-->
 </manifest>
