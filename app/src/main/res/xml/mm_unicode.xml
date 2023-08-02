@@ -2,7 +2,9 @@
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     android:keyWidth="10%p"
     android:keyHeight="@dimen/key_normal"
-    android:verticalGap="3dp">
+    android:verticalGap="3dp"
+    android:typeface="@font/taung_yoe"
+    >
 
     <Row android:rowEdgeFlags="top">
         <Key
@@ -130,6 +132,31 @@
             android:keyLabel="ဒ" />
     </Row>
     <Row>
+
+        <Key
+            android:codes="8216"
+            android:keyEdgeFlags="left"
+            android:keyLabel="❛"/>
+        <Key
+            android:codes="4158"
+            android:keyLabel="ှ" />
+
+        <Key
+            android:codes="786"
+            android:keyLabel="◌ꦁ"
+        />
+        <Key
+            android:codes="4141"
+            android:keyLabel="ိ" />
+        <Key
+            android:codes="4142"
+            android:keyLabel="ီ" />
+        <Key
+            android:codes="4192"
+            android:keyLabel="◌ၠ" />
+    </Row>
+
+    <Row>
         <Key
             android:codes="-1"
             android:isModifier="true"
@@ -176,6 +203,7 @@
             android:keyLabel="Del"
             android:keyEdgeFlags="right" />
     </Row>
+
     <Row android:rowEdgeFlags="bottom">
         <Key
             android:codes="-22"
@@ -194,7 +222,7 @@
         <Key
             android:codes="8224"
             android:keyWidth="8.75%p"
-            android:keyLabel="†"
+            android:keyLabel="†1"
         />
         <Key
             android:codes="32"
