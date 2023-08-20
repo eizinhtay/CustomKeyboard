@@ -136,24 +136,38 @@
         <Key
             android:codes="8216"
             android:keyEdgeFlags="left"
-            android:keyLabel="❛"/>
+            android:keyLabel="❛"
+            android:keyWidth="16%p"
+            />
+        <Key
+            android:codes="-5000"
+            android:keyLabel="ရ်္"
+            android:keyWidth="16%p"
+            />
+
         <Key
             android:codes="4158"
-            android:keyLabel="ှ" />
+            android:keyLabel="ှ"
+            android:keyWidth="16%p"
+            />
 
         <Key
             android:codes="786"
             android:keyLabel="◌ꦁ"
-        />
+            android:keyWidth="16%p"
+
+            />
         <Key
             android:codes="4141"
-            android:keyLabel="ိ" />
+            android:keyLabel="ိ"
+            android:keyWidth="16%p"
+            />
         <Key
             android:codes="4142"
-            android:keyLabel="ီ" />
-        <Key
-            android:codes="4192"
-            android:keyLabel="◌ၠ" />
+            android:keyLabel="ီ"
+            android:keyWidth="16%p"
+            />
+
     </Row>
 
     <Row>
@@ -207,34 +221,21 @@
     <Row android:rowEdgeFlags="bottom">
         <Key
             android:codes="-22"
-            android:keyWidth="13%p"
+            android:keyWidth="19%p"
             android:keyEdgeFlags="left"
             android:keyLabel="၁၂၃" />
-
         <Key
-            android:codes="-5000"
-            android:keyLabel="ရ်္" />
-<!--        <Key-->
-<!--            android:codes="8216"-->
-<!--            android:keyWidth="8.75%p"-->
-<!--            android:keyLabel="❛"-->
-<!--            />-->
-        <Key
-            android:codes="8224"
-            android:keyWidth="8.75%p"
-            android:keyLabel="†1"
-        />
+            android:codes="4098"
+            android:keyWidth="19%p"
+            android:keyLabel="ဂ" />
         <Key
             android:codes="32"
             android:keyWidth="31.75%p"
             android:keyLabel="space" />
-        <Key
-            android:codes="4098"
-            android:keyWidth="9.75%p"
-            android:keyLabel="ဂ" />
+
         <Key
             android:codes="4123"
-            android:keyWidth="9.75%p"
+            android:keyWidth="15%p"
             android:keyLabel="ရ" />
         <Key
             android:codes="-4"

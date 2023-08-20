@@ -3,7 +3,7 @@
     <style name="Base.Theme.CustomKeyboard" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="fontFamily">@font/taung_yoe</item>
+<!--        <item name="fontFamily">@font/taung_yoe</item>-->
         <item name="android:typeface">monospace</item>
 
     </style>
@@ -13,7 +13,7 @@
     <style name="CustomKeyboardTheme" parent="@android:style/Theme.Holo.Light">
         <!-- Customize the background color here -->
         <item name="android:windowBackground">@color/colorPrimary</item>
-        <item name="fontFamily">@font/taung_yoe</item>
+<!--        <item name="fontFamily">@font/taung_yoe</item>-->
 
     </style>
 
