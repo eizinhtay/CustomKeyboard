@@ -6,4 +6,12 @@
     </style>
 
     <style name="Theme.CustomKeyboard" parent="Base.Theme.CustomKeyboard" />
+
+    <style name="CustomKeyboardTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- Customize the background color here -->
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="fontFamily">@font/taung_yoe</item>
+
+    </style>
+
 </resources>

@@ -5,6 +5,11 @@
     android:id="@+id/keyboard_view"
     android:keyPreviewLayout="@layout/key_preview"
     android:layout_alignParentBottom="true"
-    android:background="@color/colorPrimary">
+    android:keyBackground="@color/colorPrimary"
+    android:background="@color/colorPrimary"
+    android:keyTextColor="@color/colorAccent"
+    android:keyTextSize="18sp"
+    android:fontFamily="@font/taung_yoe"
+    android:theme="@style/CustomKeyboardTheme">
 
 </android.inputmethodservice.KeyboardView>
